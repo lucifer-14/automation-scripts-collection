@@ -1,0 +1,39 @@
+/* TO CREATE TABLE
+
+column_template = ['ID INTEGER PRIMARY KEY     NOT NULL AUTO_INCREMENT',
+                'NAME           VARCHAR(255)    NOT NULL',
+                'hello          TEXT        NOT NULL']
+
+create_table(table = "COMPANY", columns=column_template)
+
+                        OR
+
+query_template = '''CREATE TABLE COMPANY
+         (ID INT PRIMARY KEY     NOT NULL,
+         NAME           TEXT    NOT NULL,
+         AGE            INT     NOT NULL,
+         ADDRESS        CHAR(50),
+         SALARY         REAL);'''
+
+create_table(query = query_template)
+
+END OF CREATING TABLE*/
+
+
+
+
+/* TO ADD DATA TO TABLES
+
+data_pair_template = [ ["ID", "1"]
+                        ["NAME", "'testing'"]]
+
+insert_data_into_table(table="COMPANY", data_pair=data_pair_template)
+
+                        OR
+
+query_template = '''INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) 
+      VALUES (1, 'Paul', 32, 'California', 20000.00 )'''
+
+create_table(query = query_template)
+
+END OF ADDING DATA TO TABLES */

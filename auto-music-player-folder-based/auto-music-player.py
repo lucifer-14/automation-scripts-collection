@@ -1,6 +1,6 @@
 import os
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 import pygame.mixer as pgmixer
-import database_connection as dc
 
 
 def requirement_check():
@@ -28,11 +28,12 @@ def play_music(song: tuple):
 def auto_music_player():
     
     if requirement_check():
-        columns = ['SONG_NAME', 'PATH', 'AUTHOR', 'ALBUM', 'IS_FAVOURITE']
-        songs_list = dc.extract_data_from_table(table="SONGS", columns=columns)
-        for song in songs_list:
-            if file_check(song[1]):
-                play_music(song)
+        # columns = ['SONG_NAME', 'PATH', 'AUTHOR', 'ALBUM', 'IS_FAVOURITE']
+        # songs_list = dc.extract_data_from_table(table="SONGS", columns=columns)
+        # for song in songs_list:
+        #     if file_check(song[1]):
+        #         play_music(song)
+        pass
 
 
 

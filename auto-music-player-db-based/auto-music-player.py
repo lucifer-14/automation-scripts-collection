@@ -1,4 +1,5 @@
 import os
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 import pygame.mixer as pgmixer
 import database_connection as dc
 

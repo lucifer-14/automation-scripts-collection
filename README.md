@@ -1,2 +1,3 @@
 # automation-scripts-collection
-My private collection of automation-scripts
+My collection of automation-scripts ....
+Lots of unfinished projects haha
